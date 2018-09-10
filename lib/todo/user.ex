@@ -4,7 +4,9 @@ defmodule Todo.User do
 
 
   schema "users" do
-    field :email, :string
+    field :email,         :string
+    field :password,      :string, virtual: true
+    field :password_hash, :string
 
     timestamps()
   end
