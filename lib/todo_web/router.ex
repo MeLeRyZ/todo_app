@@ -17,7 +17,7 @@ defmodule TodoWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    resources "/users", UserController
+    resources "/users", UserController # if you build folowing rest
   end
 
   # Other scopes may use custom stacks.

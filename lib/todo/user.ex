@@ -12,7 +12,7 @@ defmodule Todo.User do
   end
 
   @doc false
-  def changeset(user, attrs) do
+  def changeset(user, attrs \\ %{}) do # do NOT forget to add default value `%{}`
     user
     |> cast(attrs, [:email])
     |> validate_required([:email])
